@@ -1,0 +1,68 @@
+/*
+El horario modificado, ha de incluir los requisitos del anterior ejercicio (sin las ampliaciones) y los siguientes aspectos:
+
+    · Toda información de CSS irá en un documento externo (hay que quitar los styles del HTML). COMPLETADO
+    · SÓLO se definirán clases para cada uno de los módulos o asignaturas, el resto de selectores tendrán que utilizar las etiquetas o atributos.
+    · A los tramos horarios libres se les dará estilo con la pseudoclase :empty COMPLETADO
+    · Los bordes de la tabla serán invisibles COMPLETADO
+    · Se definirá una fuente manera genérica para todo el documento, exepto una de las asignaturas que llevará la fuente Comics San. El tamaño de los textos se ha de definir como relativo. Todos los textos irán centrados respecto su contenedor.
+    · Añade a cada asignatura una imagen de fondo de la celda, que se alineará a la esquina inferior derecha.
+    · La abreviatura de la asignatura pasará a ser el enlace a Aules, y el nombre del profesor ya no tendrá que estar vinculado con su email.
+    · Por defecto sólo se verá la abreviatura del módulo asignatura, cuando se pase el ratón sobre ella, aparecerá el resto de la información (Nombre completo y nombre del docente)
+    · Los enlaces visitados y no visitados tendrán el mismo estilo (sobreescribir el comportamiento por defecto del navegador)
+    · Cuando coloquemos el ratón sobre una asignatura su borde se volverá visible y de un color diferente para cada asignatura.
+    · Cuando coloquemos el ratón sobre cualquier asignatura, el borde del resto de asignaturas que empiezan a esa hora se hará visible y de color gris así como la casilla de la hora a la que empiezan esas asignaturas. Dicho de otra forma, cuando coloque el cursor sobre una casilla, todos los elementos de esa fila tendrán el borde gris, siempre y cuando sean asignaturas que empiezan a esa hora. Si coloco el cursor sobre una asignatura, esta seguirá teniendo el borde del color que se le había dado en el apartado anterior, serán el resto de casillas de la fila las que en este caso tendrán que cambiar de color.
+    · Cuando coloquemos el cursor sobre las horas de recreo, su color de fondo cambiará.
+*/
+
+body{
+    font-family:'Courier New', Courier, monospace;
+}
+
+h1, h2{
+    text-align: center;
+}
+table{
+    margin: auto;
+    border: 2px solid #454b6600;
+    text-align: center;
+}
+
+td, th{
+    border: 2px solid #454b66;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.servidor{
+    background-color: #fd79a8;
+}
+.despliegue{
+    background-color: #0e86e4;
+}
+.cliente{
+    background-color: #0a2e3c;
+    color: white;
+}
+.tutoria{
+    background-color: #a29bfe;
+}
+.disenyo{
+    background-color: #f0b14e;
+}
+.empresa{
+    background-color: #a28d6d;
+}
+
+td:empty{
+    background-color: rgb(234, 255, 140);
+}
+
+td[class]{
+    /*--------------------------------------------------ESTAMOS AQUÍ--------------------------------------------------*/
+    font-family:;
+    font-weight: bold;
+}
